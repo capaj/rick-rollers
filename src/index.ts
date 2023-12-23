@@ -25,8 +25,12 @@ export interface Env {
 	// MY_QUEUE: Queue;
 }
 
+const destinationURL = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+
 export default {
 	async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
-		return new Response('Hello World!');
+		const statusCode = 301
+		console.log('user-agent', request.headers.get('user-agent'))
+		return Response.redirect(destinationURL, statusCode)
 	},
-};
+}

@@ -2,6 +2,11 @@ name = "rick-rollers"
 main = "src/index.ts"
 compatibility_date = "2023-12-06"
 
+[[d1_databases]]
+binding = "DB"                                       # i.e. available in your Worker on env.DB
+database_name = "rick-rollers"
+database_id = "8a4e3f93-721c-46d9-ae88-8204e71a6bf7"
+
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Note: Use secrets to store sensitive data.
 # Docs: https://developers.cloudflare.com/workers/platform/environment-variables
