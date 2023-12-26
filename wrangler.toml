@@ -19,6 +19,10 @@ database_id = "8a4e3f93-721c-46d9-ae88-8204e71a6bf7"
 # binding = "MY_KV_NAMESPACE"
 # id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
+kv_namespaces = [
+  { binding = "rickrollers", id = "58437d7f4ef84a6294fb8418d483e9e2" },
+]
+
 # Bind an R2 Bucket. Use R2 to store arbitrarily large blobs of data, such as files.
 # Docs: https://developers.cloudflare.com/r2/api/workers/workers-api-usage/
 # [[r2_buckets]]
