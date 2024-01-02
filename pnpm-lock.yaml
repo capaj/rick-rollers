@@ -34,15 +34,6 @@ importers:
       solid-js:
         specifier: ^1.8.7
         version: 1.8.7
-      solid-start:
-        specifier: ^0.3.10
-        version: 0.3.10(@solidjs/meta@0.29.3)(@solidjs/router@0.10.5)(solid-js@1.8.7)(vite@5.0.10)
-      solid-start-trpc:
-        specifier: ^0.0.16
-        version: 0.0.16(@trpc/client@10.45.0)(@trpc/server@10.45.0)(solid-js@1.8.7)(solid-start@0.3.10)
-      solid-trpc:
-        specifier: ^0.0.9
-        version: 0.0.9(@tanstack/solid-query@5.17.0)(@trpc/client@10.45.0)(@trpc/server@10.45.0)(solid-js@1.8.7)
       wrangler:
         specifier: ^3.22.1
         version: 3.22.1
@@ -6594,20 +6585,6 @@ packages:
       '@babel/types': 7.23.6
       solid-js: 1.8.7
 
-  /solid-start-trpc@0.0.16(@trpc/client@10.45.0)(@trpc/server@10.45.0)(solid-js@1.8.7)(solid-start@0.3.10):
-    resolution: {integrity: sha512-99/EGIE0SObmCVhZR00bYpkEQpCDP22YgjalQpVgm0BKy2+tJzEC6vdvOII2Ppa0Fm7iPwc4LDZoFX2E3KYmsg==}
-    peerDependencies:
-      '@trpc/client': ^10.0.0
-      '@trpc/server': ^10.0.0
-      solid-js: ^1.5.7
-      solid-start: ^0.2.1
-    dependencies:
-      '@trpc/client': 10.45.0(@trpc/server@10.45.0)
-      '@trpc/server': 10.45.0
-      solid-js: 1.8.7
-      solid-start: 0.3.10(@solidjs/meta@0.29.3)(@solidjs/router@0.10.5)(solid-js@1.8.7)(vite@5.0.10)
-    dev: false
-
   /solid-start@0.3.10(@solidjs/meta@0.29.3)(@solidjs/router@0.10.5)(solid-js@1.8.7)(vite@5.0.10):
     resolution: {integrity: sha512-4z+BybZMOyw6Px6FgPvjzW6/UOLCyDNxoKRg19kGGWmcgyWf8YZv+/eIhXdt+09H/LQapZr4ZRY2iFpe7+7PbA==}
     hasBin: true
@@ -6682,20 +6659,6 @@ packages:
     transitivePeerDependencies:
       - '@nuxt/kit'
       - supports-color
-    dev: false
-
-  /solid-trpc@0.0.9(@tanstack/solid-query@5.17.0)(@trpc/client@10.45.0)(@trpc/server@10.45.0)(solid-js@1.8.7):
-    resolution: {integrity: sha512-hBa71XPQHtU6AwYQiPNwmQeuMaXhdRu4kLTIoUq34W4UTbf4nnkK/Q3B53jeIAhhOWnRQ3mXc0uxyhAwdHAOEA==}
-    peerDependencies:
-      '@tanstack/solid-query': ^4.6.1
-      '@trpc/client': 9.27.2
-      '@trpc/server': 9.27.2
-      solid-js: ^1.5.3
-    dependencies:
-      '@tanstack/solid-query': 5.17.0(solid-js@1.8.7)
-      '@trpc/client': 10.45.0(@trpc/server@10.45.0)
-      '@trpc/server': 10.45.0
-      solid-js: 1.8.7
     dev: false
 
   /source-map-js@1.0.2:
